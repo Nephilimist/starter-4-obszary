@@ -1,0 +1,174 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  font-family: 'Dm Sans', sans-serif;
+  color: var(--color-primary);
+  background-color: var(--color-background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.002em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.002em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#home-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1136px;
+  align-self: center;
+  column-gap: 109px;
+}
+
+.text-block-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 467px;
+  gap: 24px;
+  width: 45%;
+}
+
+.icons-block-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 55%;
+  max-width: 560px;
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.icon-block {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: 268px;
+  text-align: center;
+  gap: 16px;
+  justify-content: baseline;
+  align-items: center;
+  background: #272D42;
+  border-radius: 24px;
+  padding: 24px 16px;
+}
+
+.icon-container {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.ico-mm {
+  background: #373155;
+}
+
+.ico-nl {
+  background: #274255;
+}
+
+.ico-cv {
+  background: #2C3455;
+}
+
+.ico-r {
+  background: #3D413F;
+}
+
+
+.icon-block p {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #home-page {
+    height: 100%;
+  }
+  .main-container {
+    margin: 247px 0;
+    gap: 24px;
+    flex-direction: column;
+    max-width: 496px;
+    align-items: center;
+  }
+  .text-block-container {
+    width: 100%;
+    gap: 16px;
+  }
+  .icons-block-container {
+    width: 100%;
+    gap: 16px;
+  }
+  .icon-block {
+    max-width: 240px;
+    padding: 20px 14px;
+  }
+  .icon-block p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    margin: 48px 0 64px 0;
+    padding: 0 16px;
+  }
+  .text-block-container {
+    max-width: 100%;
+
+  }
+  .icons-block-container {
+    max-width: 100%;
+  }
+  .icons-block-container {
+    flex-direction: column;
+  }
+  .icon-block {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+
+
+}
